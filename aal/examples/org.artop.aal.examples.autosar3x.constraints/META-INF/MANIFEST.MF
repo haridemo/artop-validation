@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.artop.aal.examples.autosar3x.constraints;singleton:=true
-Bundle-Version: 3.3.3.qualifier
+Bundle-Version: 3.3.4.qualifier
 Bundle-Localization: plugin
 Bundle-Activator: org.artop.aal.examples.autosar3x.constraints.internal.Activator$Implementation
 Bundle-Vendor: %providerName

@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-Localization: plugin
 Bundle-SymbolicName: org.artop.aal.gautosar.constraints.ecuc;singleton:=true
-Bundle-Version: 3.3.3.qualifier
+Bundle-Version: 3.3.4.qualifier
 Bundle-Activator: org.artop.aal.gautosar.constraints.ecuc.internal.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.sphinx.emf.validation,

@@ -5,11 +5,11 @@
 	<parent>
 		<groupId>org.artop.releng</groupId>
 		<artifactId>org.artop.releng.parent</artifactId>
-		<version>3.3.3-SNAPSHOT</version>
+		<version>3.3.4-SNAPSHOT</version>
 		<relativePath>../../../../core/tools/org.artop.releng.builds/parent/pom.xml</relativePath>
 	</parent>
 	<groupId>org.artop.plugins</groupId>
 	<artifactId>org.artop.aal.autosar40.constraints.ecuc</artifactId>
-	<version>3.3.3-SNAPSHOT</version>
+	<version>3.3.4-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 </project>

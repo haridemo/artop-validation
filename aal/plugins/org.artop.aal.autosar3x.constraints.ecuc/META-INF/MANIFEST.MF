@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-Localization: plugin
 Bundle-SymbolicName: org.artop.aal.autosar3x.constraints.ecuc;singleton:=true
-Bundle-Version: 3.3.3.qualifier
+Bundle-Version: 3.3.4.qualifier
 Bundle-Activator: org.artop.aal.autosar3x.constraints.ecuc.internal.Activator
 Bundle-Vendor: %providerName
 Require-Bundle: org.artop.aal.autosar3x,

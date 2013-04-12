@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-Localization: plugin
 Bundle-SymbolicName: org.artop.aal.autosar40.constraints.ecuc;singleton:=true
-Bundle-Version: 3.3.3.qualifier
+Bundle-Version: 3.3.4.qualifier
 Bundle-Activator: org.artop.aal.autosar40.constraints.ecuc.internal.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.artop.aal.gautosar.constraints.ecuc,
