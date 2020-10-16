@@ -18,11 +18,13 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.artop.aal.validation.ui.actions.AutosarValidateAction;
 import org.artop.aal.validation.ui.actions.FixUuidConflictsAction;
 import org.artop.aal.validation.ui.actions.MergedAutosarValidationAction;
 import org.eclipse.jface.action.ActionContributionItem;
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.viewers.IStructuredSelection;
+import org.eclipse.sphinx.emf.validation.ui.actions.BasicValidateAction;
 import org.eclipse.sphinx.emf.validation.ui.actions.providers.BasicValidationActionProvider;
 import org.eclipse.ui.actions.BaseSelectionListenerAction;
 
@@ -59,8 +61,8 @@ public class AutosarValidationActionProvider extends BasicValidationActionProvid
 	@Override
 	public void doInit() {
 		super.doInit();
-		actions = new HashSet<BaseSelectionListenerAction>(Arrays.asList(fixUuidConflictsAction = createFixUuidConflictsAction(),
-				mergedValidationAction = createMergedValidationAction()));
+		actions = new HashSet<BaseSelectionListenerAction>(
+				Arrays.asList(fixUuidConflictsAction = createFixUuidConflictsAction(), mergedValidationAction = createMergedValidationAction()));
 	}
 
 	/**
@@ -68,6 +70,11 @@ public class AutosarValidationActionProvider extends BasicValidationActionProvid
 	 */
 	protected FixUuidConflictsAction createFixUuidConflictsAction() {
 		return new FixUuidConflictsAction();
+	}
+
+	@Override
+	protected BasicValidateAction createValidateAction() {
+		return new AutosarValidateAction();
 	}
 
 	/**
@@ -78,8 +85,7 @@ public class AutosarValidationActionProvider extends BasicValidationActionProvid
 	}
 
 	/*
-	 * @see
-	 * org.eclipse.sphinx.emf.validation.ui.actions.providers.BasicValidationActionProvider#populateActions(org.eclipse
+	 * @see org.eclipse.sphinx.emf.validation.ui.actions.providers.BasicValidationActionProvider#populateActions(org.eclipse
 	 * .jface .action.IMenuManager, org.eclipse.jface.viewers.IStructuredSelection, boolean)
 	 */
 	@Override
