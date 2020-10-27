@@ -1,6 +1,5 @@
 package org.artop.aal.validation.ui.actions;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -188,11 +187,7 @@ public class AutosarValidateAction extends BasicValidateAction {
 	private EAutosarPlatform getPlatform(IProject project) {
 		EAutosarPlatform platform = null;
 		if (project != null) {
-			try {
-				platform = PlatformProjectPreferenceAccessor.INSTANCE.getPlatform(project);
-			} catch (IOException ex) {
-				PlatformLogUtil.logAsError(Activator.getDefault(), ex);
-			}
+			platform = PlatformProjectPreferenceAccessor.INSTANCE.getPlatform(project);
 		}
 		return platform;
 	}

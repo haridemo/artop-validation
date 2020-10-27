@@ -25,7 +25,7 @@ public class AutosarExtendedDiagnostician extends ExtendedDiagnostician {
 	protected EObjectValidator findEValidator(EClass eClass) {
 
 		EObjectValidator validator = super.findEValidator(eClass);
-		if (platform != null && validator instanceof EAutosarValidatorAdapter) {
+		if (validator instanceof EAutosarValidatorAdapter) {
 			((EAutosarValidatorAdapter) validator).set(platform);
 		}
 		return validator;
